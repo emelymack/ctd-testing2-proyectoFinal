@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.Tests.TestOpenAccount
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
+com.Tests.TestOpenAccount.testOpenAccount()  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.Pages.PageOpenAccount.clickOpenAccountBtn()" because "this.pageOpenAccount" is null
+	at com.Tests.TestOpenAccount.testOpenAccount(TestOpenAccount.java:29)
+

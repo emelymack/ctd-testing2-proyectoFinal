@@ -47,7 +47,7 @@ Link código  base: https://drive.google.com/file/d/1GOVQNIcHjFp8iafnI7DgbnpjeKR
   - En "Actividad de la cuenta" haga clic en "Tipo:" y seleccione "Todo"
   - Haga clic en "Ir"
 
-##### Prueba back end de la API Rest:
+### Prueba back end de la API Rest:
 Validación del código de estado 200 para todas las etapas de las pruebas frontales
  - Registro URL: https://parabank.parasoft.com/parabank/register.htm
  - Abrir una nueva cuenta URL: https://parabank.parasoft.com/parabank/services_proxy/bank/createAccount?customerId=12545&newAccountType=1&fromAccountId=xxxxx

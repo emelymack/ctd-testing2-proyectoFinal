@@ -6,8 +6,8 @@ import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 
-import static com.Tests.TestRegister.password;
-import static com.Tests.TestRegister.username;
+import static com.RestAssured.testGetUser.userDemo;
+import static com.RestAssured.testGetUser.password;
 import static io.restassured.RestAssured.given;
 
 public class testPostTransferFunds {
@@ -21,7 +21,7 @@ public class testPostTransferFunds {
     public void testOpenAccount() {
         JSONObject req = new JSONObject();
 
-        given().auth().basic(username, password).
+        given().auth().basic(userDemo, password).
                 log().all().contentType(ContentType.JSON).
                 body(req.toString()).
                 when().

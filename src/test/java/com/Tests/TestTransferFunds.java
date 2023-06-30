@@ -10,10 +10,7 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static com.Tests.TestRegister.password;
-import static com.Tests.TestRegister.username;
-
-public class TestTransferFunds {
+public class TestTransferFunds extends BaseTest {
     private WebDriver driver;
     PageTransferFunds pageTransferFunds;
     By title = By.className("title");
@@ -27,7 +24,7 @@ public class TestTransferFunds {
         driver = pageTransferFunds.chromeDriverConnection();
         driver.manage().window().maximize();
         pageTransferFunds.goToLink("https://parabank.parasoft.com/parabank/index.htm");
-        pageTransferFunds.login(username, password);
+        loginUser();
         report = Reports.getInstance();
     }
 

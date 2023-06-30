@@ -11,10 +11,8 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static com.Tests.TestRegister.password;
-import static com.Tests.TestRegister.username;
 
-public class TestAccountsOverview {
+public class TestAccountsOverview extends BaseTest {
     private WebDriver driver;
     PageAccountsOverview pageAccountsOverview;
     PageOpenAccount pageOpenAccount;
@@ -30,7 +28,7 @@ public class TestAccountsOverview {
         driver = pageAccountsOverview.chromeDriverConnection();
         driver.manage().window().maximize();
         pageAccountsOverview.goToLink("https://parabank.parasoft.com/parabank/index.htm");
-        pageAccountsOverview.login(username, password);
+        loginUser();
         report = Reports.getInstance();
     }
 

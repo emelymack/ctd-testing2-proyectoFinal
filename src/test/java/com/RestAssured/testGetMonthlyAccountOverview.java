@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.RestAssured.testGetAccountsOverview.customerId;
-import static com.Tests.TestRegister.password;
-import static com.Tests.TestRegister.username;
+import static com.RestAssured.testGetUser.password;
+import static com.RestAssured.testGetUser.userDemo;
 import static io.restassured.RestAssured.given;
 
 public class testGetMonthlyAccountOverview {
@@ -19,7 +19,7 @@ public class testGetMonthlyAccountOverview {
     @Tag("TestCase-Back")
     public void getMonthlyAccountOverview() {
         Response res = given().auth()
-                .basic(username, password)
+                .basic(userDemo, password)
                 .when()
                 .get(url);
 

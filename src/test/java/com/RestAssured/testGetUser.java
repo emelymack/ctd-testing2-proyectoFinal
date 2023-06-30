@@ -5,11 +5,10 @@ import io.restassured.response.Response;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static com.Tests.TestRegister.password;
-import static com.Tests.TestRegister.username;
-
 public class testGetUser {
-    String url = "https://parabank.parasoft.com/parabank/services/bank/login/" + username + "/" + password;
+    public static String userDemo = "john";
+    public static String password = "demo";
+    String url = "https://parabank.parasoft.com/parabank/services/bank/login/" + userDemo + "/" + password;
     Response res = RestAssured.get(url);
 
     @Test

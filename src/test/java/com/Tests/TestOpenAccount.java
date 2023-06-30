@@ -10,10 +10,7 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import static com.Tests.TestRegister.password;
-import static com.Tests.TestRegister.username;
-
-public class TestOpenAccount {
+public class TestOpenAccount extends BaseTest {
     private WebDriver driver;
     PageOpenAccount pageOpenAccount;
     By resultSuccess = By.xpath("//*[@id=\"rightPanel\"]/div/div/p[1]");
@@ -26,7 +23,7 @@ public class TestOpenAccount {
         driver = pageOpenAccount.chromeDriverConnection();
         driver.manage().window().maximize();
         pageOpenAccount.goToLink("https://parabank.parasoft.com/parabank/index.htm");
-        pageOpenAccount.login(username, password);
+        loginUser();
         report = Reports.getInstance();
     }
 

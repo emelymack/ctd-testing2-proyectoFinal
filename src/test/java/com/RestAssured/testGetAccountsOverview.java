@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 
 public class testGetAccountsOverview {
-    public static int customerId = 14876;
+    public static int customerId = 12212;
     String url = "https://parabank.parasoft.com/parabank/services/bank/customers/"+customerId+"/accounts";
 
     @Test
@@ -25,13 +25,13 @@ public class testGetAccountsOverview {
     * <accounts>
         <account>
           <id>15009</id>
-          <customerId>13322</customerId>
+          <customerId>12212</customerId>
           <type>CHECKING</type>
           <balance>999000.00</balance>
         </account>
         <account>
           <id>15231</id>
-          <customerId>13322</customerId>
+          <customerId>12212</customerId>
           <type>SAVINGS</type>
           <balance>1000.00</balance>
         </account>

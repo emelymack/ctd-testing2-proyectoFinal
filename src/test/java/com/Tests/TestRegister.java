@@ -15,9 +15,8 @@ import org.openqa.selenium.WebDriver;
 public class TestRegister {
 	private static WebDriver driver;
 	PageRegister pageRegister;
-	//public static String username = "testingUser" + (int)(Math.random()*1000+1);
-	public static String username = "testingUser222";
-	public static String password = "123456";
+	public String username = "testingUser" + (int)(Math.random()*1000+1);
+	public String password = "123456";
 	By resultSuccess = By.xpath("//*[@id=\"rightPanel\"]/p");
 	public ExtentReports report;
 	public ExtentTest test;
